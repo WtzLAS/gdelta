@@ -1,0 +1,3 @@
+#pragma once
+#define gdelta_VERSION_MAJOR @gdelta_VERSION_MAJOR@
+#define gdelta_VERSION_MINOR @gdelta_VERSION_MINOR@
