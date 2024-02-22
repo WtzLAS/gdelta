@@ -31,7 +31,7 @@ jobs:
             artifact_name: Release/gdelta.exe
           - os: ubuntu-latest
             c_compiler: gcc-13
-            cpp_compiler: g++
+            cpp_compiler: g++-13
             artifact_name: gdelta
         exclude:
           - os: windows-latest
