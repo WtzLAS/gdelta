@@ -1,0 +1,6 @@
+[submodule "thirdparty/argh"]
+	path = thirdparty/argh
+	url = https://github.com/adishavit/argh
+[submodule "thirdparty/Gdelta"]
+	path = thirdparty/Gdelta
+	url = https://github.com/AnsonHooL/Gdelta.git
