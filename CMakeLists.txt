@@ -1,12 +1,14 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(gdelta VERSION 1.0)
+project(gdelta VERSION 1.1)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(gdelta main.cpp gdelta.cpp)
-
 configure_file(config.h.in config.h)
-target_include_directories(gdelta PUBLIC "${PROJECT_BINARY_DIR}")
 
+add_executable(gdelta main.cpp thirdparty/Gdelta/gdelta.cpp)
+
+target_include_directories(gdelta PUBLIC "${PROJECT_BINARY_DIR}")
+target_include_directories(gdelta PUBLIC "thirdparty/argh")
+target_include_directories(gdelta PUBLIC "thirdparty/Gdelta")
