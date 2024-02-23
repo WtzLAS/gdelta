@@ -4,3 +4,6 @@
 [submodule "thirdparty/Gdelta"]
 	path = thirdparty/Gdelta
 	url = https://github.com/AnsonHooL/Gdelta.git
+[submodule "thirdparty/zstd"]
+	path = thirdparty/zstd
+	url = https://github.com/facebook/zstd.git
