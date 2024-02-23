@@ -9,7 +9,8 @@ set(ZSTD_BUILD_PROGRAMS OFF)
 
 FetchContent_Declare(
     zstd
-    SOURCE_DIR ${PROJECT_SOURCE_DIR}/thirdparty/zstd/build/cmake/
+    SOURCE_DIR ${PROJECT_SOURCE_DIR}/thirdparty/zstd
+    SOURCE_SUBDIR build/cmake
 )
 
 FetchContent_MakeAvailable(zstd)
@@ -21,9 +22,9 @@ configure_file(config.h.in config.h)
 
 add_executable(gdelta main.cpp thirdparty/Gdelta/gdelta.cpp)
 
-target_include_directories(gdelta PUBLIC "${PROJECT_BINARY_DIR}")
-target_include_directories(gdelta PUBLIC "thirdparty/argh")
-target_include_directories(gdelta PUBLIC "thirdparty/Gdelta")
+target_include_directories(gdelta PRIVATE "${PROJECT_BINARY_DIR}")
+target_include_directories(gdelta PRIVATE "thirdparty/argh")
+target_include_directories(gdelta PRIVATE "thirdparty/Gdelta")
 target_include_directories(
     gdelta
     PRIVATE
