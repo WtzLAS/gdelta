@@ -5,6 +5,7 @@ include(FetchContent)
 
 set(ZSTD_BUILD_STATIC ON)
 set(ZSTD_BUILD_SHARED OFF)
+set(ZSTD_BUILD_PROGRAMS OFF)
 
 FetchContent_Declare(
     zstd
