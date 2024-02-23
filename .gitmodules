@@ -1,9 +1,9 @@
 [submodule "thirdparty/argh"]
 	path = thirdparty/argh
 	url = https://github.com/adishavit/argh
-[submodule "thirdparty/Gdelta"]
-	path = thirdparty/Gdelta
-	url = https://github.com/AnsonHooL/Gdelta.git
 [submodule "thirdparty/zstd"]
 	path = thirdparty/zstd
 	url = https://github.com/facebook/zstd.git
+[submodule "thirdparty/Gdelta-Fork"]
+	path = thirdparty/Gdelta-Fork
+	url = https://github.com/WtzLAS/Gdelta-Fork

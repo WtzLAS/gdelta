@@ -20,11 +20,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 configure_file(config.h.in config.h)
 
-add_executable(gdelta main.cpp thirdparty/Gdelta/gdelta.cpp)
+add_executable(gdelta main.cpp thirdparty/Gdelta-Fork/gdelta.cpp)
 
 target_include_directories(gdelta PRIVATE "${PROJECT_BINARY_DIR}")
 target_include_directories(gdelta PRIVATE "thirdparty/argh")
-target_include_directories(gdelta PRIVATE "thirdparty/Gdelta")
+target_include_directories(gdelta PRIVATE "thirdparty/Gdelta-Fork")
 target_include_directories(
     gdelta
     PRIVATE

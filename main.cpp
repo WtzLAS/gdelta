@@ -119,6 +119,8 @@ int main(int argc, char *argv[])
             dif_stream.write(com_buf.data(), com_buf.size());
         }
 
+        free(dif_buf);
+
         return 0;
     }
     else if (cmdl[1] == "p" || cmdl[1] == "patch")
@@ -174,6 +176,8 @@ int main(int argc, char *argv[])
         {
             new_stream.write((const char *)new_buf, new_buf_size);
         }
+
+        free(new_buf);
 
         return 0;
     }
